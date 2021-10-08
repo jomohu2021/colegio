@@ -1,0 +1,233 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    display: auto;
+    min-height: 100%;
+}
+
+.nombre{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: auto;
+    display: flex;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.titulo{
+    position: flex;
+    margin-left: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: monospace;
+    font-weight: bolder;
+    font-style: none;
+}
+
+.container{
+    width: 90%;
+    max-width: 500px;
+    margin: 60px;
+}
+
+.slider_img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider{
+    display: flex;
+    width: 400%;
+    height: 400%;
+}
+
+.slider_section{
+    width: 100%;
+}
+
+.slider_btn{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(35, 214, 18);
+    top: 52%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main_container{
+    text-decoration: none;
+    display: flex;
+    position: center;
+    background-color: rgb(238, 149, 198);
+}
+
+
+.nav li{
+    margin: 10px 60px 10px 60px;
+    padding: 10px 10px 10px 10px;
+    display: inline-flex;
+    text-decoration: none;
+    list-style: none;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+
+.nav li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:powderblue
+}
+
+.abriendoA{
+    color: rgb(238, 27, 27);
+    font-size: 40px;
+    display: inline-flex;
+    margin: 40px 800px 40px;
+    border-radius: 09px;
+    background-color: rgb(122, 226, 245);
+    font-family: monospace;
+    text-decoration: none;
+    transform: translateX(-80%);
+
+
+}
+
+.abriendoA:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:powderblue
+}
+
+.modal-container{
+    z-index:1000;
+    position: fixed;
+    border: 3px solid;
+    width: 100%;
+    height: 100vh; 
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    width: 30%;
+    height: 50%;
+    background-color: grey;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 25px;
+    position: relative; 
+    transition:transform 1s;
+    transform: translateY(0%);
+}
+
+.close{
+    position:absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-color:orange;
+    top:25px;
+    top: 25px;
+    right: 25px;
+    color:rgb(245, 14, 14);
+    line-height: 25px;
+    cursor:pointer
+    }
+
+.modal-close{
+    transform:translateY(-200%);
+
+
+}
+
+#boton-mas{
+    display: none;
+}
+.iconos{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.redes a, .icon-mas{
+    display: block;
+    text-decoration: none;
+    background: brown;
+    color: rgb(194, 201, 216);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 500ms ease;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    
+}
+.redes a:hover{
+    background-color: rgb(13, 82, 212);
+    color: rgb(134, 212, 31);  
+    text-decoration: none;
+    /*
+    color: seagreen;
+    background: seashell;
+      */
+}
+.redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+}
+#boton-mas:checked~ .redes a{
+   margin-bottom: 10px;     
+   opacity: 1;
+   visibility: visible;
+}
+.icon-mas{
+    cursor:pointer;
+    background: rgb(68, 218, 75);
+    font-size: 23px;
+}
+#boton-mas:checked~ .btn-mas .icon-mas{
+    transform: rotate(137deg);
+    font-size: 25px;
+}
+/*ICONO SUB MENU DE WSP*/
+
+p{
+    
+    color:black;
+}
+
+.video{
+    background-color: bisque;
+    width: 60px;
+    display: block;
+    
+}
